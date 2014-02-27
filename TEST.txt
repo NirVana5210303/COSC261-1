@@ -1,0 +1,14 @@
+Object thing2 = {"thingummy", NULL};
+Object thing1 = {"whosawhatsit", &thing2};
+
+Node other = {
+    "Somewhere over the rainbow",
+    "Some day I wish upon a star \
+and wake up where the clouds are \
+far behind me.",
+    false,
+    {NULL, NULL, NULL, NULL, NULL, NULL},
+    &thing1
+};
+
+showNode(&other, 20, false);
